@@ -11,7 +11,8 @@ Then, you just pick your points. See if the lines do a good job at approximating
 
 The plane_approx output file contains a few useful values -- the pixel sizes, the selected points, etc. Most importantly, it provides the unit normal vector to the BM in optical coordinates.
 That is, this is the transverse direction written in optical (x,y,z) coordinates! Often, this is the only object of interest. If you need to do more, 
-3) Run Volume_gui. This will let you determine the positions of measurements/positions to measure in both coordinate systems. It has many parameters, perhaps best explained in the paper.
+
+  3) Run Volume_gui. This will let you determine the positions of measurements/positions to measure in both coordinate systems. It has many parameters, perhaps best explained in the paper.
 
 A worked out example is provided in the paper.
 
