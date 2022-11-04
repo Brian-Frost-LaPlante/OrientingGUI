@@ -15,7 +15,11 @@ The program requires three steps to run:
 Then, you just pick your points. See if the lines do a good job at approximating BM in the B-Scan.
 
 The plane_approx output file contains a few useful values -- the pixel sizes, the selected points, etc. Most importantly, it provides the unit normal vector to the BM in optical coordinates.
-That is, this is the transverse direction written in optical (x,y,z) coordinates! Often, this is the only object of interest. If you need to do more, 
+That is, this is the transverse direction written in optical (x,y,z) coordinates! 
+
+It also outputs the change of basis matrix U. U maps from anatomical to optical coordinates (l,r,t) -> (x,y,z). Its inverse maps optical to anatomical coordinates. For example, a common object of interest is the measurement axis z in anatomical coordinates. That would be inv(U)*[0;0;1].
+
+Often, this is the only object of interest. If you need to do more, 
 
   3) Run Volume_gui. This will let you determine the positions of measurements/positions to measure in both coordinate systems. It has many parameters, perhaps best explained in the paper.
 
